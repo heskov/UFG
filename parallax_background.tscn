@@ -1,0 +1,86 @@
+[gd_scene load_steps=10 format=3 uid="uid://dcur84d3j55yo"]
+
+[ext_resource type="Texture2D" uid="uid://u6c0vfalf1t7" path="res://aset/Super Mountain Dusk Files/Assets/version B/Layers/middle-mountains.png" id="1_3hj6e"]
+[ext_resource type="Script" uid="uid://bxq2ofec06vva" path="res://parallax_background.gd" id="1_4enkr"]
+[ext_resource type="Texture2D" uid="uid://bweset7j7qxjq" path="res://aset/Super Mountain Dusk Files/Assets/Version C/layers/far-mountains.png" id="1_8lavc"]
+[ext_resource type="Texture2D" uid="uid://cp41d85te2qvh" path="res://aset/Super Mountain Dusk Files/Assets/Old Version/layers/parallax-mountain-bg.png" id="2_mngc5"]
+[ext_resource type="Texture2D" uid="uid://clf1gmcuqn3k4" path="res://aset/Super Mountain Dusk Files/Assets/Old Version/layers/parallax-mountain-mountains.png" id="4_c1mna"]
+[ext_resource type="Texture2D" uid="uid://d01vgsrnx0oko" path="res://aset/Super Mountain Dusk Files/Assets/Version C/layers/canyon.png" id="4_gel14"]
+[ext_resource type="Texture2D" uid="uid://cm5ybe6gtkbn2" path="res://aset/Super Mountain Dusk Files/Assets/Old Version/layers/parallax-mountain-trees.png" id="5_61s7r"]
+[ext_resource type="Texture2D" uid="uid://ct0uwamdjo2kn" path="res://aset/Super Mountain Dusk Files/Assets/Version C/layers/clouds.png" id="7_v0jid"]
+[ext_resource type="Texture2D" uid="uid://vkiv42nrcpob" path="res://aset/Clouds/Clouds 8/4.2.png" id="10_fl01k"]
+
+[node name="bg" type="ParallaxBackground"]
+script = ExtResource("1_4enkr")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.105, 1)
+motion_mirroring = Vector2(1153, 0)
+
+[node name="Far-mountains" type="Sprite2D" parent="ParallaxLayer7"]
+position = Vector2(576, 62)
+scale = Vector2(5.60577, 4.88333)
+texture = ExtResource("1_8lavc")
+
+[node name="Middle-mountains" type="Sprite2D" parent="ParallaxLayer7"]
+position = Vector2(578, 319)
+scale = Vector2(3.6, 2.70833)
+texture = ExtResource("1_3hj6e")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+visible = false
+motion_scale = Vector2(0.365, 1)
+
+[node name="Parallax-mountain-bg" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(580, 313)
+scale = Vector2(4.23529, 4.2125)
+texture = ExtResource("2_mngc5")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.54, 1)
+motion_mirroring = Vector2(1150.93, 0)
+
+[node name="Canyon" type="Sprite2D" parent="ParallaxLayer6"]
+position = Vector2(574, 330)
+scale = Vector2(3.63125, 3.625)
+texture = ExtResource("4_gel14")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.78, 1)
+motion_mirroring = Vector2(1149.2, 0)
+
+[node name="Parallax-mountain-mountains" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(575.6, 476)
+scale = Vector2(2.1125, 2.1125)
+texture = ExtResource("4_c1mna")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.825, 1)
+motion_mirroring = Vector2(1152.48, 0)
+
+[node name="Parallax-mountain-trees" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(575.3, 382)
+scale = Vector2(2.11875, 3.2625)
+texture = ExtResource("5_61s7r")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(4, 1)
+motion_mirroring = Vector2(1153, 0)
+
+[node name="Clouds" type="Sprite2D" parent="ParallaxLayer5"]
+position = Vector2(575.5, 320.5)
+scale = Vector2(3.59063, 2.67083)
+texture = ExtResource("7_v0jid")
+
+[node name="ParallaxLayer9" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(6.115, 1)
+motion_mirroring = Vector2(1153, 0)
+
+[node name="4_2" type="Sprite2D" parent="ParallaxLayer9"]
+position = Vector2(656, 265)
+scale = Vector2(2.00347, 1)
+texture = ExtResource("10_fl01k")
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(5.41, 1)
+motion_mirroring = Vector2(1151.13, 0)
